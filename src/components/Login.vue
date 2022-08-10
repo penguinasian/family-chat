@@ -10,9 +10,8 @@
         <div class="mb-2">
             <input type="password" class="form-control" v-model="password" placeholder="password" required>
         </div>
-        
         <p class="error">{{ error }}</p>
-        <button class="btn btn-primary mb-3">Sign up</button>
+        <button class="btn btn-primary mb-3">Log in</button>
         
     </form>
 </template>
@@ -42,14 +41,3 @@ export default {
     }
 }
 </script>
-
-<style>
-/* .form {
-    max-width: 1200px;
-    margin: auto;
-}
-form {
-    padding-left: 100px;
-    padding-right: 100px;
-} */
-</style>
