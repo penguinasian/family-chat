@@ -12,7 +12,7 @@ const routes = [
     path: '/message',
     name: 'message',
     component: MessageRoom
-  }
+  },
 
 ]
 
