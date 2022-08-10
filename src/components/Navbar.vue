@@ -5,22 +5,30 @@
         <p id="email-account">Currently logged in as {{ user.email }}</p>
     </div>
     
-    <button class="btn btn-primary">Log out</button>
+    <button class="btn btn-primary" @click="signout">Log out</button>
   </div>
 </template>
 
 <script>
 import { ref } from '@vue/reactivity'
 import getUser from '../composables/getUser'
+import logoutUser from '../composables/logoutUser'
+import { useRouter } from 'vue-router'
 export default {
 
     setup() {
 
-        
-
         const { user } = getUser()
+        const router = useRouter()
+        const { logout } = logoutUser()
 
-        return { user }
+        const signout = async () => {
+
+            await logout()
+            router.push({ name: 'welcome'})
+        }
+
+        return { user, signout }
  
     }
 
