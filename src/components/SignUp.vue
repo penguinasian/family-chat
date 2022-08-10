@@ -1,13 +1,13 @@
 <template>
  
     <form @submit.prevent="handleSubmit">
-        <div class="mb-2">
+        <div class="mb-4">
             <input type="text" class="form-control" v-model="displayName" placeholder="display name" required>
         </div>
-        <div class="mb-2">
+        <div class="mb-4">
             <input type="email" class="form-control" v-model="email" placeholder="email" required>
         </div>
-        <div class="mb-2">
+        <div class="mb-4">
             <input type="password" class="form-control" v-model="password" placeholder="password" required>
         </div>
         

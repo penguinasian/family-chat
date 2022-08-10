@@ -13,6 +13,7 @@ const login = async (email, password) => {
             throw new Error("Invalid credentials!")
         }
         console.log(res)
+        
 
     } catch (err) {
 
