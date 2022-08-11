@@ -38,7 +38,9 @@ export default {
 <style>
 
 .nav-bar {
+    padding-bottom: 20px;
     display: flex;
+    border-bottom: 1px solid #eee;
     justify-content: space-between;
     align-items: center;
 }
@@ -46,6 +48,7 @@ export default {
 .nav-bar p {
     text-align: start;
     line-height: 0.5em;
+    margin-left: 10px;
 }
 
 #email-account {
